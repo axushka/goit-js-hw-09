@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
@@ -16,3 +17,74 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+ 
+  background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+.gallery {
+  
+  padding: 24px 156px 24px 156px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.gallery-item {
+  width: 360px;
+  height: auto;
+  transition: transform 0.3s ease;
+  
+  flex: 1 1 360px;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+.gallery-image {
+ width: 100%;
+ height: auto;
+display: block;
+
+
+}
+
+
